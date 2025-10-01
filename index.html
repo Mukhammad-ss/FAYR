@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAIR - Платформа бесплатных объявлений</title>
+    <meta name="description" content="FAIR - платформа для размещения бесплатных и частных объявлений в Дагестане">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#" aria-label="FAIR - Главная страница">
+                        <h1>FAIR</h1>
+                        <span class="tagline">Честные объявления</span>
+                    </a>
+                </div>
+                
+                <nav class="main-nav" role="navigation" aria-label="Основная навигация">
+                    <ul>
+                        <li><a href="#categories">Категории</a></li>
+                        <li><a href="#free-today">Бесплатно сегодня</a></li>
+                        <li><a href="#how-it-works">Как это работает</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="btn btn-outline" aria-label="Войти в аккаунт">
+                        <i class="fas fa-user" aria-hidden="true"></i>
+                        Войти
+                    </button>
+                    <button class="btn btn-primary" aria-label="Подать объявление">
+                        <i class="fas fa-plus" aria-hidden="true"></i>
+                        Подать объявление
+                    </button>
+                </div>
+                
+                <button class="mobile-menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Найди или подари то, что нужно</h2>
+                <p>Платформа честных объявлений для жителей Дагестана. Покупай, продавай или дари бесплатно.</p>
+                
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <div class="search-input-group">
+                        <label for="main-search" class="sr-only">Поиск объявлений</label>
+                        <input 
+                            type="search" 
+                            id="main-search"
+                            placeholder="Что ищете? Например: iPhone, мебель, автомобиль..." 
+                            aria-label="Поиск объявлений"
+                        >
+                        <select aria-label="Выберите город">
+                            <option value="">Все города</option>
+                            <option value="makhachkala">Махачкала</option>
+                            <option value="derbent">Дербент</option>
+                            <option value="kaspiysk">Каспийск</option>
+                            <option value="buynaksk">Буйнакск</option>
+                            <option value="kizlyar">Кизляр</option>
+                        </select>
+                        <button class="search-btn" type="submit" aria-label="Найти объявления">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Categories -->
+    <section class="quick-categories" id="categories">
+        <div class="container">
+            <h3>Популярные категории</h3>
+            <div class="categories-grid">
+                <a href="#" class="category-card" aria-label="Транспорт">
+                    <div class="category-icon">
+                        <i class="fas fa-car" aria-hidden="true"></i>
+                    </div>
+                    <span>Транспорт</span>
+                </a>
+                <a href="#" class="category-card" aria-label="Недвижимость">
+                    <div class="category-icon">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                    </div>
+                    <span>Недвижимость</span>
+                </a>
+                <a href="#" class="category-card" aria-label="Электроника">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop" aria-hidden="true"></i>
+                    </div>
+                    <span>Электроника</span>
+                </a>
+                <a href="#" class="category-card" aria-label="Мебель и интерьер">
+                    <div class="category-icon">
+                        <i class="fas fa-couch" aria-hidden="true"></i>
+                    </div>
+                    <span>Мебель</span>
+                </a>
+                <a href="#" class="category-card" aria-label="Одежда и обувь">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt" aria-hidden="true"></i>
+                    </div>
+                    <span>Одежда</span>
+                </a>
+                <a href="#" class="category-card" aria-label="Услуги">
+                    <div class="category-icon">
+                        <i class="fas fa-tools" aria-hidden="true"></i>
+                    </div>
+                    <span>Услуги</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Today Section -->
+    <section class="free-today" id="free-today">
+        <div class="container">
+            <div class="section-header">
+                <h3><i class="fas fa-gift" aria-hidden="true"></i> Бесплатно сегодня</h3>
+                <p>Добрые люди делятся тем, что им больше не нужно</p>
+            </div>
+            
+            <div class="listings-grid">
+                <!-- Free Listing 1 -->
+                <article class="listing-card free-item">
+                    <div class="listing-image">
+                        <img src="https://via.placeholder.com/300x200/4ade80/ffffff?text=Книги" alt="Коллекция книг" loading="lazy">
+                        <div class="listing-badge free">Бесплатно</div>
+                    </div>
+                    <div class="listing-content">
+                        <h4>Книги по программированию</h4>
+                        <p class="listing-description">Отдаю коллекцию технических книг. JavaScript, Python, алгоритмы.</p>
+                        <div class="listing-meta">
+                            <span class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Махачкала</span>
+                            <span class="author">Магомед А.</span>
+                        </div>
+                        <div class="listing-actions">
+                            <button class="btn btn-primary btn-small">Написать</button>
+                            <button class="btn btn-outline btn-small" aria-label="Добавить в избранное">
+                                <i class="far fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Free Listing 2 -->
+                <article class="listing-card free-item">
+                    <div class="listing-image">
+                        <img src="https://via.placeholder.com/300x200/06b6d4/ffffff?text=Растения" alt="Комнатные растения" loading="lazy">
+                        <div class="listing-badge free">Бесплатно</div>
+                    </div>
+                    <div class="listing-content">
+                        <h4>Комнатные растения</h4>
+                        <p class="listing-description">Отростки фикуса и денежного дерева. Приживаются хорошо.</p>
+                        <div class="listing-meta">
+                            <span class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Каспийск</span>
+                            <span class="author">Фатима М.</span>
+                        </div>
+                        <div class="listing-actions">
+                            <button class="btn btn-primary btn-small">Написать</button>
+                            <button class="btn btn-outline btn-small" aria-label="Добавить в избранное">
+                                <i class="far fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Free Listing 3 -->
+                <article class="listing-card free-item">
+                    <div class="listing-image">
+                        <img src="https://via.placeholder.com/300x200/8b5cf6/ffffff?text=Детские+вещи" alt="Детская одежда" loading="lazy">
+                        <div class="listing-badge free">Бесплатно</div>
+                    </div>
+                    <div class="listing-content">
+                        <h4>Детская одежда</h4>
+                        <p class="listing-description">Качественная одежда на мальчика 3-4 года. Отличное состояние.</p>
+                        <div class="listing-meta">
+                            <span class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Дербент</span>
+                            <span class="author">Айшат К.</span>
+                        </div>
+                        <div class="listing-actions">
+                            <button class="btn btn-primary btn-small">Написать</button>
+                            <button class="btn btn-outline btn-small" aria-label="Добавить в избранное">
+                                <i class="far fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Listings -->
+    <section class="recent-listings">
+        <div class="container">
+            <div class="section-header">
+                <h3>Свежие объявления</h3>
+                <p>Только что добавлены на площадку</p>
+            </div>
+            
+            <div class="listings-grid">
+                <!-- Paid Listing 1 -->
+                <article class="listing-card">
+                    <div class="listing-image">
+                        <img src="https://via.placeholder.com/300x200/ef4444/ffffff?text=iPhone+14" alt="iPhone 14" loading="lazy">
+                        <div class="listing-badge price">25 000 ₽</div>
+                    </div>
+                    <div class="listing-content">
+                        <h4>iPhone 14 128GB</h4>
+                        <p class="listing-description">Состояние отличное, все документы, чехол в подарок.</p>
+                        <div class="listing-meta">
+                            <span class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Махачкала</span>
+                            <span class="author">Омар С.</span>
+                        </div>
+                        <div class="listing-actions">
+                            <button class="btn btn-primary btn-small">Написать</button>
+                            <button class="btn btn-outline btn-small" aria-label="Добавить в избранное">
+                                <i class="far fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Paid Listing 2 -->
+                <article class="listing-card">
+                    <div class="listing-image">
+                        <img src="https://via.placeholder.com/300x200/10b981/ffffff?text=Toyota+Camry" alt="Toyota Camry" loading="lazy">
+                        <div class="listing-badge price">850 000 ₽</div>
+                    </div>
+                    <div class="listing-content">
+                        <h4>Toyota Camry 2018</h4>
+                        <p class="listing-description">Один владелец, полная комплектация, техосмотр пройден.</p>
+                        <div class="listing-meta">
+                            <span class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Буйнакск</span>
+                            <span class="author">Расул А.</span>
+                        </div>
+                        <div class="listing-actions">
+                            <button class="btn btn-primary btn-small">Написать</button>
+                            <button class="btn btn-outline btn-small" aria-label="Добавить в избранное">
+                                <i class="far fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Service Listing -->
+                <article class="listing-card">
+                    <div class="listing-image">
+                        <img src="https://via.placeholder.com/300x200/f97316/ffffff?text=Ремонт+квартир" alt="Ремонт квартир" loading="lazy">
+                        <div class="listing-badge service">Услуга</div>
+                    </div>
+                    <div class="listing-content">
+                        <h4>Ремонт квартир под ключ</h4>
+                        <p class="listing-description">Качественный ремонт с гарантией. Опыт работы 10 лет.</p>
+                        <div class="listing-meta">
+                            <span class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Кизляр</span>
+                            <span class="author">Абдулла М.</span>
+                        </div>
+                        <div class="listing-actions">
+                            <button class="btn btn-primary btn-small">Написать</button>
+                            <button class="btn btn-outline btn-small" aria-label="Добавить в избранное">
+                                <i class="far fa-heart" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h3>Как это работает</h3>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Подайте объявление</h4>
+                    <p>Добавьте фото, опишите товар или услугу за 2 минуты</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Получайте сообщения</h4>
+                    <p>Заинтересованные покупатели свяжутся с вами в чате</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Совершите сделку</h4>
+                    <p>Встретьтесь с покупателем и проведите безопасную сделку</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <h5>FAIR</h5>
+                        <p>Честные объявления для всех</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h6>Категории</h6>
+                    <ul>
+                        <li><a href="#">Транспорт</a></li>
+                        <li><a href="#">Недвижимость</a></li>
+                        <li><a href="#">Электроника</a></li>
+                        <li><a href="#">Услуги</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h6>Поддержка</h6>
+                    <ul>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Правила</a></li>
+                        <li><a href="#">Безопасность</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h6>О нас</h6>
+                    <ul>
+                        <li><a href="#">О платформе</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FAIR. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
